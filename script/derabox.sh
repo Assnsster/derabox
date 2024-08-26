@@ -1,6 +1,7 @@
 #!/bin/bash  
 #variable
 VERSION="1.0"
+fime=$(curl https://raw.githubusercontent.com/Assnsster/derabox/main/version)
 # Color
 red='\033[1;31m'
 green='\033[1;32m'
@@ -26,7 +27,7 @@ if [ ! -d $PREFIX/opt/derabox ]
   then echo -ne "$yellow derabox "$red"chưa được tải!\n";exit
 fi
 # check ver
-if [ ! $VERSION == $(curl https://raw.githubusercontent.com/Assnsster/derabox/main/version) ]
+if [ ! $VERSION == $fime ]
 then
 echo -ne "$yellow bạn đang có bản update [ver $(curl https://raw.githubusercontent.com/Assnsster/derabox/main/version) ] $r";up
 else 
