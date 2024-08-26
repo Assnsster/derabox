@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash  
 #variable
 VERSION="1.0"
 # Color
