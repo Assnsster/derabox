@@ -27,6 +27,7 @@ if [ ! -d $PREFIX/opt/derabox ]
 fi
 # check ver
 if [ ! $VERSION == $(curl https://raw.githubusercontent.com/Assnsster/derabox/main/version) ]
+then
 echo -ne "$yellow bạn đang có bản update [ver $(curl https://raw.githubusercontent.com/Assnsster/derabox/main/version) ] $r";up
 else 
 echo -ne "$green bạn sử dụng bản update mới nhất!"
