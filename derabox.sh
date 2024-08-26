@@ -30,7 +30,7 @@ if [ ! $VERSION == $(curl https://raw.githubusercontent.com/Assnsster/derabox/ma
 echo -ne "$yellow bạn đang có bản update [ver $(curl https://raw.githubusercontent.com/Assnsster/derabox/main/version) ] $r";up
 else 
 echo -ne "$green bạn sử dụng bản update mới nhất!"
-!
+fi
 # Check Architecture
 case $(getprop ro.product.cpu.abi) in
         arm64-v8a)echo -ne "$yellow Architecture của bạn là"$green" $(getprop ro.product.cpu.abi)\n";;
